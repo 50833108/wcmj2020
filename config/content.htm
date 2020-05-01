@@ -11,12 +11,6 @@
 <p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.</a></p>
 <p><img alt="" height="297" src="/images/2.jpg" width="446"/></p>
 <p></p>
-<h2>W6</h2>
-<p>portable obs</p>
-<p>google hangout meet</p>
-<p>streeming and recording</p>
-<h2>W7</h2>
-<p>grouping and meet.</p>
 <h1>Develop</h1>
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
@@ -39,3 +33,26 @@
 <p><span style="background-color: #ffffff; color: #333333;">在一个典型的配置中，一个本地网络使用一个专有网络的指定子网（比如                  192.168.x.x或10.x.x.x）和连在这个网络上的一个路由器。这个路由器占有这个网路 地址空间的一个专有地址（比如192.168.0.1），同时它还通过一个或多个<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E5%9B%A0%E7%89%B9%E7%BD%91%E6%9C%8D%E5%8A%A1%E6%8F%90%E4%BE%9B%E5%95%86" style="background-color: #ffffff; color: #333333;" title="因特网服务提供商">因特网服务提供商</a>提供的公有的<span lang="en">IP</span>地址（叫做“过载”<span lang="en">NAT</span>）连接到因特网上。当信息由本地网络向因特网传递时，源地址从专有地址转换为公用地址。由路由器跟踪每个连接上的基本数据，主要是目的地址和端口。当有回复返回路由器时，它通过输出阶段记录的连接跟踪数据来决定该转发给内部网的哪个主机；如果有多个公用地址可用，当数据包返回时，<a class="mw-disambig" href="https://zh.wikipedia.org/wiki/TCP" style="background-color: #ffffff; color: #333333;" title="TCP">TCP</a>或<a class="mw-disambig" href="https://zh.wikipedia.org/wiki/UDP" style="background-color: #ffffff; color: #333333;" title="UDP">UDP</a>客户机的端口号可以用来分解数据包。对于因特网上的通信，路由器本身充当源和目的。</span></p>
 <p><span style="background-color: #ffffff; color: #333333;">流行在网络上的一种看法认为，<a href="https://zh.wikipedia.org/wiki/IPv6" style="background-color: #ffffff; color: #333333;" title="IPv6">IPv6</a>的廣泛採用將使得NAT不再需要，因為NAT只是一個處理IPv4的地址空間不足的方法。</span></p>
 <p><img alt="" height="206" src="/images/1.png" width="278"/></p>
+<h1>w6-w9</h1>
+<h4>W6</h4>
+<p>portable obs</p>
+<p>google hangout meet</p>
+<p>streeming and recording</p>
+<h4></h4>
+<h4>讓手機可以利用電腦熱點上網</h4>
+<p>採用 <a href="https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn725n/">https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn725n/</a></p>
+<p>將此一 USB Wifi adapter 連接電腦後, 若網路為 IPv4 協定時, 可以透過"設定 -&gt; 網路和網際網路 -&gt; 行動熱點", 選擇開啟並編輯"網路名稱與網路密碼"後, 讓至多 8 台手機透過熱點連線上網.</p>
+<p>但是因為目前 Windows 10 並<a href="https://answers.microsoft.com/en-us/windows/forum/all/support-ipv6-in-mobile-hotspot-network-sharing/8801ea57-c6dc-4c10-afe6-192879a85835">未提供 IPv6 網路協定下的網路熱點功能</a>, 因此在純 IPv6 網路協定下無法使用"行動熱點"服務.</p>
+<hr/>
+<p>利用手機鏡頭當作 webcam:</p>
+<p>Android:<span> </span><a href="https://www.digitalcitizen.life/turn-android-smartphone-webcam-windows">https://www.digitalcitizen.life/turn-android-smartphone-webcam-windows</a> <br/>iPhone:<span> </span><a href="https://www.makeuseof.com/tag/use-your-iphone-as-a-webcam-heres-how-ios/">https://www.makeuseof.com/tag/use-your-iphone-as-a-webcam-heres-how-ios/</a> </p>
+<hr/>
+<h5>需要 clone 個人倉儲時:</h5>
+<p>git clone --recurse-submodules 倉儲_url.git</p>
+<p>例如: git clone --recurse-submodules<span> </span><a href="https://github.com/mdecourse/wcmj2020.git">https://github.com/mdecourse/wcmj2020.git</a></p>
+<h5>現場直播的 audio 錄音設定</h5>
+<p>在電腦輔助設計室進行直播時, 由於現場有擴音設備, 因此採用 OBS 串流至 Youtube 的最佳收音並非從 Webcam 的麥克風, 而是從擴音器以 audio outpu 連接到電腦的麥克風插槽, 然後將 OBS 的 audio 設定為從電腦的麥克風收音</p>
+<h4>W7</h4>
+<p>grouping and meet.</p>
+<h4></h4>
+<p></p>
