@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>CMSimfly 網際內容管理</title>
+  <title>wcmj2020 課程</title>
 
 
   <meta name="HandheldFriendly" content="True" />
@@ -18,6 +18,7 @@
 
   <!-- Feed -->
         <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CMSimfly 網際內容管理 Full Atom Feed" />
+          <link href="./feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="CMSimfly 網際內容管理 Categories Atom Feed" />
 
   <link href="./theme/css/style.css" type="text/css" rel="stylesheet" />
 
@@ -39,27 +40,49 @@
   <![endif]-->
 
 
+    <link href="./2020-May-22-wcmj-class.html" rel="canonical" />
+
+        <meta name="description" content="如何製作個人的網頁 step1:登入 gm 帳號後, 下載[ 這個東西] 至 downloads 目錄, 然後以 7zip 解開到 C:\wcmj2020 目錄下 step2:解開後的目錄建議放置於自己的隨身碟底下, 而隨身碟底下便可看到wcm2020, 其中有...">
+
+        <meta name="author" content="liao">
+
+        <meta name="tags" content="wcmj2020 class">
+
+
 
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="CMSimfly 網際內容管理"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="CMSimfly 網際內容管理"/>
-<meta property="og:description" content="View the blog."/>
+<meta property="og:title" content="wcmj2020 課程"/>
+<meta property="og:description" content="如何製作個人的網頁 step1:登入 gm 帳號後, 下載[ 這個東西] 至 downloads 目錄, 然後以 7zip 解開到 C:\wcmj2020 目錄下 step2:解開後的目錄建議放置於自己的隨身碟底下, 而隨身碟底下便可看到wcm2020, 其中有..."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="./"/>
-<meta property="og:image" content="./theme/images/home-bg.jpg">
+<meta property="og:url" content="./2020-May-22-wcmj-class.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2020-05-22 14:30:00+08:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="./author/liao.html">
+<meta property="article:section" content="Misc"/>
+<meta property="article:tag" content="wcmj2020 class"/>
+<meta property="og:image" content="./theme/images/post-bg.jpg">
 
 <!-- Twitter Card -->
 
 <script type="application/ld+json">
 {
-  "@context" : "http://schema.org",
-  "@type" : "Website",
-  "name": " CMSimfly 網際內容管理 ",
-  "url" : "./",
-  "image": "./theme/images/home-bg.jpg",
-  "description": "View the blog."
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "wcmj2020 課程",
+  "headline": "wcmj2020 課程",
+  "datePublished": "2020-05-22 14:30:00+08:00",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "liao",
+    "url": "./author/liao.html"
+  },
+  "image": "./theme/images/post-bg.jpg",
+  "url": "./2020-May-22-wcmj-class.html",
+  "description": "如何製作個人的網頁 step1:登入 gm 帳號後, 下載[ 這個東西] 至 downloads 目錄, 然後以 7zip 解開到 C:\wcmj2020 目錄下 step2:解開後的目錄建議放置於自己的隨身碟底下, 而隨身碟底下便可看到wcm2020, 其中有..."
 }
 </script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
@@ -157,21 +180,33 @@ init_mathjax();
     </ul>
   </div>
 </nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header id="blog-header" class="has-cover">
+    <header id="post-header" class="has-cover">
       <div class="inner">
         <nav id="navigation">
+            <span id="home-button" class="nav-button">
+                <a class="home-button" href="./index.html" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+            </span>
           <span id="menu-button" class="nav-button">
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="blog-name"><a href="./">CMSimfly 網際內容管理</a></h1>
-            <div class="blog-cover cover" style="background-image: url('./theme/images/home-bg.jpg')">
-        
+        <h1 class="post-title">wcmj2020 課程</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="./author/liao.html">Liao</a>
+            | <time datetime="週五 22 五月 2020">週五 22 五月 2020</time>
+        </span>
+        <!-- TODO : Modified check -->
+            <div class="post-cover cover" style="background-image: url('./theme/images/post-bg.jpg')">
       </div>
     </header>
-
 
   <section id="wrapper">
     <a class="hidden-close"></a>
@@ -183,80 +218,59 @@ init_mathjax();
 </section>
 
 
-<div id="index" class="container">
-  <main class="content" role="main">
-    <div class="extra-pagination">
-<nav class="pagination" role="pagination">
-  <div class="inner">
-    <span class="pagination-info">Page 1 / 1</span>
-    <div class="clear"></div>
-  </div>
-</nav>
-    </div>
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
+        <div class="inner">
+            <section class="post-content">
+                <h2>如何製作個人的網頁</h2>
+<p>step1:登入 gm 帳號後, 下載[ 這個東西] 至 downloads 目錄, 然後以 7zip 解開到 C:\wcmj2020 目錄下</p>
+<p>step2:解開後的目錄建議放置於自己的隨身碟底下, 而隨身碟底下便可看到wcm2020, 其中有 start.bat 與                stop.bat     以滑鼠點擊 start.bat, 即可開啟可攜系統, 若需關閉可攜系統, 以滑鼠點擊 stop.bat 即可</p>
+<p>step3:接下來創立自己的github帳號, 並建立自己的倉儲</p>
+<p>step4:於可攜系統下, 打git clone將遠端的倉儲取下</p>
+<p>step5:緊接著打git submodule add https://github.com/mdecourse/cmsimde cmsimde</p>
+<p>step6:再來進入 cmsimde 以 python wsgi.py 啟動動態系統, 之後在瀏覽器開啟, 並以admin作為密碼登入管理</p>
+<p>step7:然後存檔切成靜態網頁</p>
+<p>step8:在可攜系統以Y:\tmp\wcmj2020去git add .再打git commit -m"add 123"最後打git push便將資料頹到遠端了</p>
+            </section>
 
-        <article class="post">
-        <div class="inner">
-            <header class="post-header">         
-                <h2 class="post-title"><a href="./2020-May-22-wcmj-week.html" rel="bookmark" title="Permalink to wcmj2020 W10-W12">wcmj2020 W10-W12</a>
-                </h2>
-                <span class="post-meta">
-                        <a href="./author/liao.html">Liao</a>
-                     | <time datetime="週五 22 五月 2020">週五 22 五月 2020</time>
-                </span>
-                <div class="clear"></div>
-            </header>
-                <section class="post-excerpt">
-                    <p>
-                        W10-11 SSH:為了更安全的不讓自己的帳密被別人看見 1.下載 Putty 工具組從這裡 下載一般版 2.利用 y:\portablegit\bin\sh.exe 進入 shell 命令環境後, 打ssh-keygen -t rsa -b 4096 -C "使用者學號"獲得兩把不同版本的key 3.接下來要利用 puttygen.exe 將 id_rsa(兩把key中的第一把) 轉為 Putty 可以解讀的 .ppk 格式, 並修改隨身系統的啟動批次檔案, 指定利用 putty...
-                    </p>
-                </section>
-            </div>
-        </article>
-        <article class="post">
-        <div class="inner">
-            <header class="post-header">         
-                <h2 class="post-title"><a href="./2020-May-22-wcmj-note.html" rel="bookmark" title="Permalink to wcmj2020 筆記">wcmj2020 筆記</a>
-                </h2>
-                <span class="post-meta">
-                        <a href="./author/liao.html">Liao</a>
-                     | <time datetime="週五 22 五月 2020">週五 22 五月 2020</time>
-                </span>
-                <div class="clear"></div>
-            </header>
-                <section class="post-excerpt">
-                    <p>
-                        於可攜系統下之功能 1.開起個人網站:Y:\tmp\wcmj2020\cmsimde>python wsgi.py 2.將修改的網站內容推到遠端:01 Y:\tmp\wcmj2020>git add . 02 Y:\tmp\wcmj2020>git commit -m "add something" 03 Y:\tmp\wcmj2020>git push 3.將遠端內容抓至近端:Y:\tmp>git clone--recurse-submodules...
-                    </p>
-                </section>
-            </div>
-        </article>
-        <article class="post">
-        <div class="inner">
-            <header class="post-header">         
-                <h2 class="post-title"><a href="./2020-May-22-wcmj-class.html" rel="bookmark" title="Permalink to wcmj2020 課程">wcmj2020 課程</a>
-                </h2>
-                <span class="post-meta">
-                        <a href="./author/liao.html">Liao</a>
-                     | <time datetime="週五 22 五月 2020">週五 22 五月 2020</time>
-                </span>
-                <div class="clear"></div>
-            </header>
-                <section class="post-excerpt">
-                    <p>
-                        如何製作個人的網頁 step1:登入 gm 帳號後, 下載[ 這個東西] 至 downloads 目錄, 然後以 7zip 解開到 C:\wcmj2020 目錄下 step2:解開後的目錄建議放置於自己的隨身碟底下, 而隨身碟底下便可看到wcm2020, 其中有 start.bat 與 stop.bat 以滑鼠點擊 start.bat, 即可開啟可攜系統, 若需關閉可攜系統, 以滑鼠點擊 stop.bat 即可 step3:接下來創立自己的github帳號, 並建立自己的倉儲...
-                    </p>
-                </section>
-            </div>
-        </article>
+            <section class="post-info">
+                <div class="post-share">
+                    <a class="twitter" href="https://twitter.com/share?text=wcmj2020 課程&amp;url=./2020-May-22-wcmj-class.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
+                    </a>
+                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=./2020-May-22-wcmj-class.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
+                    </a>
+                    <a class="googleplus" href="https://plus.google.com/share?url=./2020-May-22-wcmj-class.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
+                    </a>
+                    <div class="clear"></div>
+                </div>
 
-<nav class="pagination" role="pagination">
-  <div class="inner">
-    <span class="pagination-info">Page 1 / 1</span>
-    <div class="clear"></div>
-  </div>
-</nav>
-  </main>
-</div>
+                <aside class="post-tags">
+<a href="./tag/wcmj2020-class.html">wcmj2020 class</a>                </aside>
+
+                <div class="clear"></div>
+
+
+                </section>
+
+
+                <aside class="post-nav">
+                    <a class="post-nav-next" href="./2020-May-22-wcmj-note.html">
+                        <section class="post-nav-teaser">
+                            <i class="ic ic-arrow-left"></i>
+                                <h2 class="post-nav-title">wcmj2020 筆記</h2>
+                            <p class="post-nav-excerpt">於可攜系統下之功能 1.開起個人網站:Y:\tmp\wcmj2020\cmsimde>python wsgi.py 2.將修改的網站內容推到遠端:01...</p>
+                        </section>
+                    </a>
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
       <!-- TODO : Body class -->
     <div id="body-class" style="display: none;" class=""></div>
 
