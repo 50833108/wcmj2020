@@ -60,6 +60,9 @@
 <v t="leo.20170710022041.1"><vh>@path markdown</vh>
 <v t="leo.20180115115910.1"><vh>2018</vh>
 <v t="leo.20180423103639.1"><vh>2018 Fall CP 課程</vh>
+<v t="leo.20200619131622.1"><vh>@clean 2020061201.md</vh>
+<v t="leo.20200619145636.1"><vh>使用Leo編輯並更新</vh></v>
+</v>
 <v t="leo.20200522155833.1"><vh>@clean 2020052203.md</vh>
 <v t="leo.20200529162443.1"><vh>SSH</vh></v>
 </v>
@@ -419,6 +422,55 @@ W12
 
 
 [這裡]:https://www.chiark.greenend.org.uk/~sgtatham/putty/</t>
+<t tx="leo.20200619131622.1">@language md
+---
+Title:wcmj2020 W12-W14
+Date: 2020-06-12 16:00
+Category: Misc
+Tags:wcmj2020 note
+Slug: 2020-May-22-wcmj-week
+Author: liao
+---
+W12-14
+----
+
+&lt;!--PELICAN_END_SUMMARY --&gt;
+
+@others</t>
+<t tx="leo.20200619145636.1">使用Leo編輯並更新
+----
+W12
+
+
+使用上週介紹的leo來編輯自己的網誌
+
+
+W13
+
+
+教如何運用leo同步更新Pelican Blog 內容與 Google Blogger :
+
+
+1.利用 Windows 10 設定 -&gt; 選擇預設網頁瀏覽器, 使用 Google Chrome 作為預設瀏覽器.
+
+
+2.隨身程式系統必須安裝 google-api-python-client 與 oauth2client
+
+於個人隨身系統打pip install google-api-python-client oauth2client
+
+
+3.OAuth 2.0 client IDs 程式類別可以選擇 Desktop app
+
+
+4.使用者完成 client_secrets.json 設定後, 必須將檔案存在倉儲目錄外部
+
+
+W14
+
+
+發現上週無法同步更新的原因，並重新選擇新的憑證，完成上週未完成的部分
+
+無法同步更新原因:OAuth 2.0 client IDs 程式類別應該選擇 Web application</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
